@@ -35,4 +35,4 @@ Copy `vimrc` file into `~/.vimrc` file.
 Run `:PlugInstall`
 
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[vim-image]: https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AVimlogo.svg&psig=AOvVaw3BO9hGros7s259EaLnhf5K&ust=1629815741884000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPDD3vSux_ICFQAAAAAdAAAAABAH 
+[vim-image]: https://upload.wikimedia.org/wikipedia/commons/9/9f/Vimlogo.svg
