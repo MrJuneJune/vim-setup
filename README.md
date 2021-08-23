@@ -1,7 +1,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Vim for beginner
 
-[[vim][vim-image]](https://www.vim.org/)
+[![vim][vim-image]](https://www.vim.org/)
 
 Vim is a configurable text editor that is widely used amongs programmer.
 
