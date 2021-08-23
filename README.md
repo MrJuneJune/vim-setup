@@ -3,23 +3,23 @@
 
 [![vim][vim-image]](https://www.vim.org/)
 
-Vim is a configurable text editor that is widely used amongs programmer.
+Vim is a configurable text editor that is widely used amongst programmers.
 
 Here's why:
-* Uses only keyboard so no accidental misclick while copying.
-* [You can record your action and replay it to reduce mundance tasks.](https://vim.fandom.com/wiki/Recording_keys_for_repeated_jobs)
-* Many shortcuts and keys to make simple tasks quicker.
+* Uses only a keyboard so no accidental misclick while copying or moving through files.
+* [You can record your action and replay it to reduce mundane tasks.](https://vim.fandom.com/wiki/Recording_keys_for_repeated_jobs)
+* Many shortcuts and keys to make simple tasks quicker. i.e) Copying and pasting a line or a block of codes, change all re-occurring variable names, etcs.
 * Can be used in remote servers.
 
-And many mores.
+And many more.
 
 ### Pre-requisite
 
-Following libraries will be needed for this vim setup.
+Following libraries will be needed for this vim setup. 
 
 * [vim](https://www.vim.org/download.php)
 ```
-# For linux,
+# For Linux,
 sudo apt-get install vim
 ```
 * [vim plug](https://github.com/junegunn/vim-plug)
