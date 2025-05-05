@@ -1,38 +1,13 @@
-<!-- ABOUT THE PROJECT -->
-## Vim for beginner
+# My vim setup
 
-[![vim][vim-image]](https://www.vim.org/)
+Simple vim setup I use for my work flow.
 
-Vim is a configurable text editor that is widely used amongst programmers.
+## How to install and start 
 
-Here's why:
-* Uses only a keyboard so no accidental misclick while copying or moving through files.
-* [You can record your action and replay it to reduce mundane tasks.](https://vim.fandom.com/wiki/Recording_keys_for_repeated_jobs)
-* Many shortcuts and keys to make simple tasks quicker. i.e) Copying and pasting a line or a block of codes, change all re-occurring variable names, etcs.
-* Can be used in remote servers.
-
-And many more.
-
-### Pre-requisite
-
-Following libraries will be needed for this vim setup. 
-
-* [vim](https://www.vim.org/download.php)
 ```
-# For Linux,
-sudo apt-get install vim
-```
-* [vim plug](https://github.com/junegunn/vim-plug)
-```
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+./start.sh
 ```
 
-## Getting Started
+## Reasoning
 
-Copy `vimrc` file into `~/.vimrc` file.
-
-Run `:PlugInstall`
-
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[vim-image]: https://upload.wikimedia.org/wikipedia/commons/9/9f/Vimlogo.svg
+I started out using VSCode when I started coding around 2015? I think it was using around 2GB of RAM or something crazy like that. Anyway, I experimented with different set ups since VSCode feels sluggish and I just want to write a text into a file to code. I experimented with vim with plugins and then used neovim, but with all honesty, All I want is being able to grep easily so creating this.
