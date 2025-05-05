@@ -10,4 +10,6 @@ Simple vim setup I use for my work flow.
 
 ## Reasoning
 
-I started out using VSCode when I started coding around 2015? I think it was using around 2GB of RAM or something crazy like that. Anyway, I experimented with different set ups since VSCode feels sluggish and I just want to write a text into a file to code. I experimented with vim with plugins and then used neovim, but with all honesty, All I want is being able to grep easily so creating this.
+I started out using VSCode when I started coding around 2015? I think it was using around 2GB of RAM or something crazy like that. Anyway, I experimented with different set ups since using vim with plugins, neovims, and etcs
+
+I realized that IDE is not needed and I just want to write a text into a file to code so updating my vimrc with simple shell script to add two plugins I use; fzf and wiki. 
