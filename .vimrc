@@ -20,6 +20,8 @@ set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 colorscheme nightfly
+" Force turn on  unless it is over 1M LOC
+autocmd BufReadPre * if getfsize(expand("%")) > 1000000 | syntax off | endif
 
 " Line wrapping
 set nowrap
@@ -27,6 +29,8 @@ set nowrap
 " Search settings
 set ignorecase
 set smartcase
+set hlsearch
+set incsearch
 
 " Cursor line
 set cursorline
@@ -70,6 +74,9 @@ nnoremap <leader>fs :RG<CR>
 " <leader>fs: Ripgrep search for selected text (visual mode)
 vnoremap <leader>fs :<C-u>execute 'Rg ' . getreg('"')<CR>
 
+" Open man in vim
+noremap <c-k> :h <cword><cr>
+
 " vim wiki
 " Set the directory where your wiki pages will be stored
 let g:wiki_root = expand('~/wiki/')
@@ -82,3 +89,8 @@ let g:wiki_global_mappings = 1
 
 " Enable links to markdown files
 let g:wiki_link_extension = '.md'
+
+" Turn on man vim mode
+runtime! ftplugin/man.vim
+" Keyword
+set keywordprg=:Man
