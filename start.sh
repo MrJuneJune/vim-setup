@@ -40,3 +40,7 @@ git clone --depth 1 https://github.com/lervag/wiki.vim.git "$PLUG_DIR/wiki.vim"
 echo "---Installing nightfly colorscheme---"
 git clone --depth 1 https://github.com/bluz71/vim-nightfly-colors.git "$THEME_DIR/nightfly"
 
+echo "---Link to neovim---"
+mkdir -p ~/.config/nvim
+ln -s ~/.vim/pack ~/.config/nvim/pack
+
