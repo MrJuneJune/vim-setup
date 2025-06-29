@@ -5,18 +5,20 @@ set -e
 # Not using plugin management since it is cancer
 PLUG_DIR="$HOME/.vim/pack/plugins/start"
 THEME_DIR="$HOME/.vim/pack/themes/start"
+NEOVIM_DIR="$HOME/.config/nvim/pack" 
 
+mkdir -p "$NEOVIM_DIR"
 mkdir -p "$PLUG_DIR"
 mkdir -p "$THEME_DIR"
 
 echo "---Installing system dependencies---"
 if [[ "$(uname)" == "Darwin" ]]; then
   echo "Assuming OS is mac"
-  sudo apt update
-  sudo apt install -y ripgrep vim git curl
+  brew install ripgrep vim git curl neovim
 else
   echo "Assuming OS is linux"
-  brew install -y ripgrep vim git curl
+  sudo apt update
+  sudo apt install -y ripgrep vim git curl neovim
 fi
 
 echo "---Installing fzf binary---"
@@ -41,6 +43,14 @@ echo "---Installing nightfly colorscheme---"
 git clone --depth 1 https://github.com/bluz71/vim-nightfly-colors.git "$THEME_DIR/nightfly"
 
 echo "---Link to neovim---"
-mkdir -p ~/.config/nvim
 ln -s ~/.vim/pack ~/.config/nvim/pack
 
+echo "---Set vimrc into neovim"
+cat > ~/.config/nvim/init.vim <<EOF
+" Neovim compatibility for Vim config
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath = &runtimepath
+
+EOF
+
+cat .vimrc >> ~/.config/nvim/init.vim
